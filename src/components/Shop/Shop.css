@@ -1,0 +1,17 @@
+.shop_container {
+  max-width: 1600px;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+.shop_container > .left_container {
+  width: 100%;
+  border-right: 2px solid #ddd;
+}
+.shop_container > .right_container {
+  padding: 20px;
+  max-width: 360px;
+  height: -moz-max-content;
+  height: max-content;
+}/*# sourceMappingURL=Shop.css.map */

@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+  > img {
+    width: 300px;
+  }
+  > nav {
+    margin: 20px 0;
+    background-color: #000;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > a {
+      height: 100%;
+      text-decoration: none;
+      color: white;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+      padding: 14px 20px;
+      font-size: 18px;
+      font-weight: 600;
+      &:hover {
+        color: #000;
+        background-color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.shop_container {
+  max-width: 1600px;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  > .left_container {
+    width: 100%;
+    border-right: 2px solid #ddd;
+  }
+  > .right_container {
+    padding: 20px;
+    max-width: 360px;
+    height: max-content;
+  }
+}
