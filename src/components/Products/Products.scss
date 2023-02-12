@@ -1,0 +1,47 @@
+.product {
+  display: flex;
+  gap: 20px;
+  > .image {
+    display: inline-block;
+    > img {
+      width: 200px;
+    }
+  }
+  > .pricing {
+    > h3 {
+      margin-top: 0;
+      > a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    > span {
+      color: rgba(0, 0, 0, 0.795);
+      font-weight: 500;
+    }
+    > .price {
+      font-size: 24px;
+      font-weight: 700;
+      color: blue;
+    }
+    > p {
+      font-size: 18px;
+      color: black;
+      font-weight: 500;
+    }
+    > button {
+      padding: 10px 21px;
+      border-radius: 5px;
+      background-color: #f79300;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: black;
+        background-color: #f79400b2;
+      }
+    }
+  }
+}

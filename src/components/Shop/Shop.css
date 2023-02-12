@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap");
 .shop_container {
+  position: relative;
+  padding: 20px;
   max-width: 1600px;
   margin-left: auto;
   display: flex;
@@ -9,9 +12,19 @@
   width: 100%;
   border-right: 2px solid #ddd;
 }
+.shop_container > .left_container > h1 {
+  color: blue;
+  font-family: "Biryani", sans-serif;
+}
 .shop_container > .right_container {
+  position: relative;
+  display: block;
   padding: 20px;
   max-width: 360px;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: 200vh;
+}
+.shop_container > .right_container > div {
+  position: sticky;
+  top: 50px;
+  left: 0;
 }/*# sourceMappingURL=Shop.css.map */

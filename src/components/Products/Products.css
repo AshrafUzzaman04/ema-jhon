@@ -1,1 +1,45 @@
-/*# sourceMappingURL=Products.css.map */
+.product {
+  display: flex;
+  gap: 20px;
+}
+.product > .image {
+  display: inline-block;
+}
+.product > .image > img {
+  width: 200px;
+}
+.product > .pricing > h3 {
+  margin-top: 0;
+}
+.product > .pricing > h3 > a {
+  text-decoration: none;
+  color: black;
+}
+.product > .pricing > span {
+  color: rgba(0, 0, 0, 0.795);
+  font-weight: 500;
+}
+.product > .pricing > .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: blue;
+}
+.product > .pricing > p {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+.product > .pricing > button {
+  padding: 10px 21px;
+  border-radius: 5px;
+  background-color: #f79300;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.product > .pricing > button:hover {
+  color: black;
+  background-color: rgba(247, 148, 0, 0.6980392157);
+}/*# sourceMappingURL=Products.css.map */
