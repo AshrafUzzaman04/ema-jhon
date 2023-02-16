@@ -8,6 +8,7 @@ import "./Shop.css";
 const Shop = () => {
   const first10 = fakeData.slice(0, 10);
   const [porducts, addProducts] = useState(first10);
+  const [cart, setCart] = useState([]);
 
   // event handler
   const handleAddProduct = (e) => {
@@ -21,12 +22,16 @@ const Shop = () => {
           <FontAwesomeIcon icon={faStar} style={{ color: "black" }} /> Shop Now
         </h1>
         {porducts.map((pd) => (
-          <Products alldata={pd} handleAddProduct={handleAddProduct}></Products>
+          <Products
+            key={pd.id}
+            alldata={pd}
+            handleAddProduct={handleAddProduct}
+          ></Products>
         ))}
       </div>
       <div className="right_container">
         <div className="all_data">
-          <h2>Order Summary</h2>
+          <h2>Order Summary {cart.length}</h2>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
           delectus veritatis dolor dolorem illo explicabo animi ducimus facere
           saepe quis? Est possimus magni voluptatibus ipsum consequuntur sint
