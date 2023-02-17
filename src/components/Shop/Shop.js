@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import fakeData from "../../fakeData/products.json";
 import Products from "../Products/Products";
 import "./Shop.css";
+import Cart from "../Cart/Cart";
 
 const Shop = () => {
   const first10 = fakeData.slice(0, 10);
@@ -12,7 +13,8 @@ const Shop = () => {
 
   // event handler
   const handleAddProduct = (e) => {
-    console.log("Product added", e);
+    const newCart = [...cart, e];
+    setCart(newCart);
   };
 
   return (
@@ -31,13 +33,7 @@ const Shop = () => {
       </div>
       <div className="right_container">
         <div className="all_data">
-          <h2>Order Summary {cart.length}</h2>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          delectus veritatis dolor dolorem illo explicabo animi ducimus facere
-          saepe quis? Est possimus magni voluptatibus ipsum consequuntur sint
-          quae aliquid deserunt dolore delectus, optio nihil eveniet, sapiente
-          ullam voluptates velit recusandae reiciendis itaque? Repudiandae nulla
-          illo blanditiis quaerat delectus accusantium error.
+          <Cart items={cart}></Cart>
         </div>
       </div>
     </div>

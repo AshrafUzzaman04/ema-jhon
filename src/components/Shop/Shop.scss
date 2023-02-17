@@ -20,7 +20,7 @@
     position: relative;
     display: block;
     padding: 20px;
-    max-width: 360px;
+    min-width: 300px;
     min-height: 200vh;
     > div {
       position: sticky;
